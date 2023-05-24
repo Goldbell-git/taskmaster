@@ -1,0 +1,58 @@
+.button {
+    width: 200px;
+    height: 60px;
+    background: #5D364B;
+    border-radius: 12px;
+    border: 1px solid #5D364B;
+    cursor: pointer;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    animation: moveInUp 1.5s ease-out;
+  }
+  
+  .button:hover {
+    background: #5D364B;
+    border-color: #5D364B;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(93, 54, 75, .7);
+  }
+
+  .button:active {
+    background: #5D364B;
+    border-color: #5D364B;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 10px rgba(93, 54, 75, .7);
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+
+  @keyframes moveInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    80% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+  @media (max-width: 700px) {
+    .button {
+      width: 170px;
+      height: 50px;
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }

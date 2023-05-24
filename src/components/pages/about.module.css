@@ -1,0 +1,79 @@
+.about {
+    padding: 5%;
+}
+
+.text {
+    color: #000000;
+}
+
+.header {
+    text-align: center;
+    font-family: 'Abhaya Libre ExtraBold';
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 24px;
+    animation: moveInTop 1.5s ease-out;
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    80% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.para {
+    text-align: left;
+    font-family: 'Plus Jakarta Sans';
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    animation: moveInLeft 1.5s ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@media (max-width: 700px) {
+    .about {
+        padding: 4%;
+    }
+
+
+    .header {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 23px;
+    }
+
+
+    .para {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 15px;
+    }
+}

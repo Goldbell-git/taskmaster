@@ -1,0 +1,169 @@
+.features {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+
+.polygon {
+    position: relative;
+    background: url("Polygon_1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    top: 150px;
+    width: 195px;
+    height: 304px;
+}
+
+.text {
+    position: absolute;
+    padding-left: 10%;
+    color: #000000;
+    text-align: center;
+    margin-top: -300px;
+}
+
+.header {
+    font-family: 'Abhaya Libre ExtraBold';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 25px;
+    animation: moveInTop 1.5s ease-out;
+}
+
+.heading {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: bold;
+    margin-top: -10px;
+    font-size: 16px;
+    line-height: 16px;
+    align-items: center;
+    color: #0B0E26;
+    animation: moveInTop 1.5s ease-out;
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    80% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+.para {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    color: #0B0E26;
+    margin-top: 35px;
+    animation: moveInLeft 1.5s ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+.button {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.image {
+    background: url("unsplash_4.jpg");
+    width: 510px;
+    height: 430px;
+    background-size: 500px;
+    background-repeat: no-repeat;
+}
+.horizon {
+    padding: 3%;
+}
+
+.hr {
+    border: 3px solid #D9D9D9;
+    margin-top: 60px;
+}
+
+@media (max-width: 1100px) {
+    .features {
+        margin-top: 30% !important;
+    }
+
+    .polygon {
+        display: none;
+    }
+
+    .image {
+        display: none;
+    }
+    .text {
+        position: relative;
+    }
+
+    .all {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .features {
+        margin-top: 40% !important;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
+
+    .header {
+        font-size: 22px;
+        line-height: 23px;
+        font-weight: 600;
+    }
+
+    .para {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    
+    .hr {
+        border: 1px solid #D9D9D9;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .text {
+        margin-top: -200px;
+    }
+}
+
+@media (max-width: 550px) {
+    .features {
+        margin-top: 60% !important;
+    }
+}

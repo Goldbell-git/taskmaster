@@ -1,0 +1,53 @@
+.footer {
+    padding: 3%;
+}
+
+.social {
+    display: flex;
+}
+
+.fb {
+    background: url('Facebook.jpg');
+    height: 9.44px;
+    width: 12px;
+    margin-right: 10px;
+}
+
+.ig {
+    background: url('Instagram.jpg');
+    height: 9.44px;
+    width: 12px;
+    margin-right: 10px;
+}
+
+.linkedIn {
+    background: url('LinkedIn.jpg');
+    height: 9.44px;
+    width: 12px;
+    margin-right: 10px;
+}
+
+.para {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    color: #45688B;
+    margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+    .footer {
+        text-align: center;
+    }
+
+    .social {
+        margin: auto;
+        justify-content: center;
+    }
+
+    .para {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+}

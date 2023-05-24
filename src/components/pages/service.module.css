@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap');
+
+.service {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 10% 0%;
+}
+
+.first {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 8%;
+}
+
+.first_image {
+    height: 200px;
+    margin-right: 20px;
+}
+
+.second_image {
+    height: 200px;
+    margin-right: 20px;
+}
+
+.third_image {
+    height: 200px;
+    margin-right: 20px;
+}
+
+.polygon {
+    position: relative;
+    background: url("Polygon.jpg");
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 200px;
+}
+
+.text {
+    position: absolute;
+    padding: 3%;
+    color: #000000;
+    margin-left: -50% !important;
+    margin-top: -10%;
+    text-align: center;
+}
+
+.header {
+    font-family: 'Abhaya Libre ExtraBold';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 25px;
+    animation: moveInTop 1.5s ease-out;
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    80% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.para {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    animation: moveInLeft 1.5s ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@media (max-width: 1100px) {
+    .service {
+        display: block;
+        justify-content: center;
+        margin-top: 15%;
+    }
+
+    .img {
+        margin-top: 10%;
+        margin-left: 50%;
+        width: 350px;
+        height: 300px;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+        border: 2px solid rgba(93, 54, 75, 0.25);
+        border-radius: 13px;
+    }
+    
+    .first {
+        width: 100%;
+        display: flex;
+        animation: slide 15s infinite;
+        margin-left: -30px;
+        margin-top: -8%;
+    }
+    
+    .first_image {
+        height: 475px;
+        margin-right: -20px;
+    }
+
+    .second_image {
+        height: 426px;
+        margin-right: -20px;
+    }
+
+    .third_image {
+        height: 460px;
+        margin-right: -20px;
+    }
+    
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(0);
+        }
+    
+        30% {
+            transform: translateX(-100%);
+        }
+    
+        60% {
+            transform: translateX(-100%);
+        }
+
+        70% {
+            transform: translateX(-200%);
+        }
+
+        100% {
+            transform: translateX(-200%);
+        }
+    }
+
+    .polygon {
+        display: none;
+    }
+
+    .text {
+        position: relative;
+        justify-content: center;
+        margin-left: 8% !important;
+        margin-right: 8% !important;
+        margin-top: -3%;
+    }
+}
+
+@media (max-width: 950px) {
+    .service {
+        display: block;
+        justify-content: center;
+        margin-top: 20%;
+    }
+
+    .header {
+        font-size: 22px;
+        line-height: 23px;
+        font-weight: 600;
+    }
+
+    .para {
+        font-size: 16px;
+        line-height: 23px;
+    }
+}
+
+@media (max-width: 700px) {
+    .img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .first_image {
+        height: 415px;
+    }
+
+    .second_image {
+        height: 370px;
+    }
+
+    .third_image {
+        height: 375px;
+    }
+
+    .para {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .service {
+        margin-top: 30%;
+    }
+
+    .text {
+        margin-top: -20%;
+    }
+}
+
+@media (max-width: 450px) {
+    .service {
+        margin-top: 40%;
+    }
+}
